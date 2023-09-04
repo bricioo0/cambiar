@@ -4,3 +4,14 @@ body{
     text-align: center;
     transition: background-color 0.5s
 }
+.container{
+    padding: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
