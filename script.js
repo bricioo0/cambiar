@@ -1,10 +1,23 @@
 const botonCambiar = document.getElementById('cambiar');
-const elementotexto = document.getElementById('Texto')
-const body = document.getElementById('bodys')
-
+const elementoTexto = document.getElementById('Texto');
 
 botonCambiar.addEventListener('click', () => {
-elementotexto.textContent = 'sos hincha de gimnasia mal ahi amigo';
+    // Genera colores aleatorios para el texto y el fondo
+    const colorTexto = generarColorAleatorio();
+    const colorFondo = generarColorAleatorio();
 
-cuerpo.style.backgroundColor = '#000000';
+    // Cambia el texto y el fondo con los colores aleatorios
+    elementoTexto.style.color = colorTexto;
+    document.body.style.backgroundColor = colorFondo;
 });
+
+// Función para generar un color aleatorio en formato hexadecimal
+function generarColorAleatorio() {
+    const letrasHex = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letrasHex[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
