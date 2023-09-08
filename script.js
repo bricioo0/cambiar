@@ -5,10 +5,11 @@ botonCambiar.addEventListener('click', () => {
 
     const colorTexto = generarColorAleatorio();
     const colorFondo = generarColorAleatorio();
-
-   
+    const colorBoton = generarColorAleatorio();
+    
     elementoTexto.style.color = colorTexto;
     document.body.style.backgroundColor = colorFondo;
+    botonCambiar.style.backgroundColor = colorBoton;
 });
 
 
